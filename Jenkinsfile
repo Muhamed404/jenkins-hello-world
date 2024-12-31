@@ -13,7 +13,7 @@ pipeline {
                 sh 'mvn -version'
             }
         }
-        stage('Bulding') {
+        stage('Build') {
             steps {
                 git branch: 'main', url: 'https://github.com/Muhamed404/jenkins-hello-world.git'
                 sh 'mvn clean package -DskipTests=true'
