@@ -17,6 +17,7 @@ pipeline {
             steps {
                
                 sh 'mvn clean package -DskipTests=true'
+                archiveArtifacts 'target/hello-world-*.jar'
             }
         }
         stage('Unit Test') {
