@@ -20,7 +20,7 @@ pipeline {
                 archiveArtifacts 'target/hello-demo-*.jar'
             }
         }
-        stage('Unit Test ') {
+        stage('Unit Test') {
             steps {
 
                 sh 'mvn test'
